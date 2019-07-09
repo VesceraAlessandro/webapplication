@@ -1,7 +1,8 @@
 # webapplication
 
 ## API
-Per le API che gestiscono l'autenticazione ho utilizzato Passport, che permette di avere un'autenticazuione completa con un server OAuth2.
+Per le API che gestiscono l'autenticazione ho utilizzato il package Passport di laravel , che permette di avere un'autenticazuione completa con un server OAuth2.
+Per le API che gestiscono la timbratura (nel progetto le ho chiamate presenze) ho utilizzato le routes e i controller di Laravel.
 
 ### Login API
 Per il login è necessario l'username e la password dell'utente. Il percorso dell'API è http://127.0.0.1:8000/api/auth/login. L'API va testata tramite un POST e inserendo i dati in un form.
