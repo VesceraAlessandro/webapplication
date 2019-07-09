@@ -14,22 +14,22 @@ Per il signup è necessario l'username, la mail, la password e la riconferma del
 Per ritornarsi l'utente loggato bisogna inserire il token Bearer che ci è stato rilasciato al login . Il percorso dell'API è http://127.0.0.1:8000/api/auth/getAuthUser. L'API va testata tramite un GET.
 
 ### Logout API
-Per il logout bisogna inserire il token Bearer che ci è stato rilasciato al login . Il percorso dell'API è http://127.0.0.1:8000/api/auth/logout. L'API va testata tramite un get. All'logout il token viene revocato e non è più utilizzabile.
+Per il logout bisogna inserire il token Bearer che ci è stato rilasciato al login . Il percorso dell'API è http://127.0.0.1:8000/api/auth/logout. L'API va testata tramite un GET. Al logout il token viene revocato e non è più utilizzabile.
 
 ### GetAllPresences API
-Per ritornarsi tutte le presenze bisogna inserire il percorso dell'API http://127.0.0.1:8000/api/presences/getAllPresences. L'API va testata tramite un GET
+Per ritornarsi tutte le presenze basta inserire il percorso dell'API http://127.0.0.1:8000/api/presences/getAllPresences. L'API va testata tramite un GET.
 
 ### GetSpecificUserPresences API
-Per ritornarsi le specifiche presenze di untente bisogna inserire l'id dell'utente. Il percorso dell'API http://127.0.0.1:8000/api/presences/getSpecificUserPresences. L'API va testata tramite un GET.
+Per ritornarsi le specifiche presenze di untente bisogna inserire l'id dell'utente. Il percorso dell'API è http://127.0.0.1:8000/api/presences/getSpecificUserPresences. L'API va testata tramite un GET.
 
 ### IinsertPresence API
-Per inserire una specifica presenza bisogna inserire l'id dell'utente e lo stato della presenza. Il percorso dell'API http://127.0.0.1:8000/api/presences/insertPresence. L'API va testata tramite un POST.
+Per inserire una specifica presenza bisogna inserire l'id dell'utente e lo stato della presenza. Il percorso dell'API è http://127.0.0.1:8000/api/presences/insertPresence. L'API va testata tramite un POST.
 
 ### UpdatePresence API
-Per modificare una specifica presenza bisogna inserire l'id della presenza e lo stato della presenza modificato. Il percorso dell'API http://127.0.0.1:8000/api/presences/updatePresence. L'API va testata tramite un PUT e inserendo i dati in un x-www-form-undercoded.
+Per modificare una specifica presenza bisogna inserire l'id della presenza e lo stato della presenza modificato. Il percorso dell'API è http://127.0.0.1:8000/api/presences/updatePresence. L'API va testata tramite un PUT e inserendo i dati in un x-www-form-undercoded.
 
 ### DeletePresence API
-Per eliminare una specifica presenza bisogna inserire l'id della presenza. Il percorso dell'API http://127.0.0.1:8000/api/presences/deletePresence. L'API va testata tramite un DELETE e inserendo i dati in un x-www-form-undercoded.
+Per eliminare una specifica presenza bisogna inserire l'id della presenza. Il percorso dell'API è http://127.0.0.1:8000/api/presences/deletePresence. L'API va testata tramite un DELETE e inserendo i dati in un x-www-form-undercoded.
 
 ### GetAllUsers API
-Per ritornarsi tutti gli utenti bisogna inserire il percorso dell'API http://127.0.0.1:8000/api/users/getAllUsers. L'API va testata tramite un get.
+Per ritornarsi tutti gli utenti basta inserire il percorso dell'API http://127.0.0.1:8000/api/users/getAllUsers. L'API va testata tramite un GET.
