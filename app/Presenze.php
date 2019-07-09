@@ -13,6 +13,12 @@ class Presenze extends Model
      */
     protected $fillable = ['Stato', 'idUtenti'];
 	
+	/**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = ['created_at', 'updated_at'];
 	
 	/**
      * The attribute that is single assignable.

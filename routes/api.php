@@ -29,7 +29,7 @@ Route::group(['prefix' => 'auth'], function () {
 Route::group(['prefix' => 'presences'], function () {
 	Route::get('getAllPresences', 'PresenceController@getPresences');
 	Route::get('getSpecificUserPresences', 'PresenceController@getSpecificUserPresences');
-	Route::post('insertPresence', 'PresenceController@insterPresence');
+	Route::post('insertPresence', 'PresenceController@insertPresence');
 	Route::put('updatePresence', 'PresenceController@updatePresence');
 	Route::delete('deletePresence', 'PresenceController@deletePresence');
 });

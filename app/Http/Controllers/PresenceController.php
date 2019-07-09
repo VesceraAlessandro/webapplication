@@ -25,7 +25,7 @@ class PresenceController extends Controller
 
 	
 	//inserisce una presenza relativa all'utente 
-	public function insterPresence(Request $request)
+	public function insertPresence(Request $request)
 	{
 		$presenza = new Presenze;
 
@@ -34,7 +34,7 @@ class PresenceController extends Controller
 
         $presenza->save();
 		
-		return response()->json($presenza, 201);
+		return response()->json(['message' => 'Successfully presence insertion'], 201);
 	}
 	
 
@@ -50,7 +50,7 @@ class PresenceController extends Controller
 		
 		$presenza->save();
 				
-		return response()->json($presenza, 200);
+		return response()->json(['message' => 'Successfully presence update'], 200);
 	}
 	
 
@@ -63,7 +63,7 @@ class PresenceController extends Controller
 		
 		$presenza->delete();
 		
-		return response()->json(null, 204);
+		return response()->json(['message' => 'Successfully presence deleting'], 200);
 		
 	}
 }
